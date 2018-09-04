@@ -1,0 +1,9 @@
+* Emacs
+This repository stores my Emacs related files, init file(s), custom libs.
+These are:
+- [[mathematica-navigation]]
+
+** mathematica-navigation
+This package was created to mimic the recursive block highlight functionality found in Wolfram Mathematica.
+
+
