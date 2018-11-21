@@ -12,8 +12,16 @@ Clone the repository
 git clone https://github.com/hooger/emacs
 #+END_SRC
 and add to your Emacs init.el (substitute my build path, ~/build/emacs, with the one where you cloned the repo)
-#+BEGIN_SRC 
+#+BEGIN_SRC elisp
 (add-to-list 'load-path "~/build/emacs/")
 (require 'mathematica-navigation)
+#+END_SRC
+
+** usage
+The main functionality is to press C+. for highlighting the parenthesis blocks, but there is also a function (and hotkey: C+,) to go back to the last position before starting using said functionality.
+They can be remapped like this
+#+BEGIN_SRC elisp
+(global-set-key (kbd "C-.") 'mathematica-navigation-highlight-parenthesis-block)
+(global-set-key (kbd "C-,") 'mathematica-navigation-goto-position-before-highlight)
 #+END_SRC
 
